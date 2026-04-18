@@ -11,11 +11,21 @@ window.addEventListener('scroll', () => {
 // Mobile menu toggle
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
+const menuOverlay = document.getElementById('menuOverlay');
 
 menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
     navLinks.classList.toggle('active');
+    menuOverlay.classList.toggle('active');
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+});
+
+// Close mobile menu when clicking on overlay
+menuOverlay.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    navLinks.classList.remove('active');
+    menuOverlay.classList.remove('active');
+    document.body.style.overflow = 'auto';
 });
 
 // Close mobile menu when clicking on a link
@@ -23,17 +33,9 @@ navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         menuToggle.classList.remove('active');
         navLinks.classList.remove('active');
+        menuOverlay.classList.remove('active');
         document.body.style.overflow = 'auto';
     });
-});
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', (e) => {
-    if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
 });
 
 // Reveal animations on scroll
