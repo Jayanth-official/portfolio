@@ -100,11 +100,12 @@ const chatbotResponses = {
     'skills': "Jayanth is skilled in JavaScript, Python, React.js, Node.js, PostgreSQL, Git, MongoDB, and Next.js. He's a Full Stack Developer with expertise in both frontend and backend technologies.",
     'projects': "Jayanth has worked on several projects including:\n• SmartATS - An AI-powered resume builder and optimizer\n• E-book Management - A comprehensive digital library system\nBoth projects showcase his full-stack development skills.",
     'contact': "You can reach Jayanth at:\n📧 Email: jayanthsj99@gmail.com\n📱 Phone: +91 7200176530\n📍 Location: Chennai, Tamil Nadu\n\nFeel free to connect with him for opportunities!",
+    'social': "Connect with Jayanth on social media:\n🔗 GitHub: github.com/Jayanth-official\n💼 LinkedIn: linkedin.com/in/jayanth-sj\n🐦 Twitter: twitter.com/jayanth_sj\n📸 Instagram: instagram.com/jayanth_sj\n\nYou can also find these links in the footer!",
     'hello': "Hello! Nice to meet you! I'm here to help you learn more about Jayanth S.J. What would you like to know?",
     'hi': "Hi there! 👋 I'm Jayanth's virtual assistant. How can I help you today?",
     'about': "Jayanth S.J is a passionate Full Stack Developer based in Chennai. He's currently pursuing M.Sc in Information Technology and has a strong foundation in both frontend and backend development.",
     'education': "Jayanth is currently pursuing M.Sc in Information Technology at Vels Institute of Science, Technology & Advanced Studies (2026 - Present). He completed his BCA from Avichi College of Arts and Science (2020 - 2023).",
-    'default': "I'm here to help you learn about Jayanth! You can ask me about his experience, skills, projects, contact information, or education. What would you like to know?"
+    'default': "I'm here to help you learn about Jayanth! You can ask me about his experience, skills, projects, contact information, social media, or education. What would you like to know?"
 };
 
 // Toggle chatbot
@@ -168,6 +169,8 @@ function getBotResponse(message) {
         return chatbotResponses.projects;
     } else if (lowerMessage.includes('contact') || lowerMessage.includes('email') || lowerMessage.includes('phone') || lowerMessage.includes('reach')) {
         return chatbotResponses.contact;
+    } else if (lowerMessage.includes('social') || lowerMessage.includes('github') || lowerMessage.includes('linkedin') || lowerMessage.includes('twitter') || lowerMessage.includes('instagram')) {
+        return chatbotResponses.social;
     } else if (lowerMessage.includes('hello') || lowerMessage.includes('hey')) {
         return chatbotResponses.hello;
     } else if (lowerMessage.includes('hi') || lowerMessage.includes('hii')) {
