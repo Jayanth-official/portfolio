@@ -103,15 +103,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Chatbot responses with Python emphasis
     const chatbotResponses = {
-        'experience': "Jayanth has experience as a Java with Android Intern at Pantech e-Learning Pvt Ltd in 2023. He's currently pursuing his M.Sc in Information Technology and has worked on projects like SmartATS and E-book Management systems.",
-        'skills': "Jayanth is skilled in:\n🐍 Python - Backend development, Django, Data processing\n💻 JavaScript - React.js, Node.js, Full-stack development\n🗄️ Databases - PostgreSQL, MongoDB\n⚛️ Frontend - React.js, Next.js\n🔧 Tools - Git, Version Control",
+        'experience': "Jayanth has diverse work experience:\n• 2024: Mobile Servicing and Laptops Technician at CFix\n• 2023: Java with Android Intern & Web Developer Intern at Pantech e-Learning Pvt Ltd\n\nHe's currently pursuing his M.Sc in Information Technology and has worked on projects like SmartATS and E-book Management systems.",
+        'skills': "Jayanth is skilled in:\n🐍 Python - Backend development, Django, Data processing\n💻 JavaScript - React.js, Node.js, Full-stack development\n🗄️ Databases - PostgreSQL, MongoDB\n⚛️ Frontend - React.js, Next.js\n🔧 Tools - Git, Version Control\n📱 Mobile - Android development\n🛠️ Hardware - Mobile and laptop servicing",
         'python': "Yes! Jayanth is proficient in Python. He uses it for:\n• Backend development with Django\n• Data processing and automation\n• Building scalable applications\n• Database management with PostgreSQL\nPython is one of his core skills!",
         'projects': "Jayanth has worked on several projects including:\n• SmartATS - An AI-powered resume builder and optimizer (React.js, Node.js, AI/ML)\n• E-book Management - A comprehensive digital library system (Python, Django, PostgreSQL)\nBoth projects showcase his full-stack development skills.",
         'contact': "You can reach Jayanth at:\n📧 Email: jayanthsj99@gmail.com\n📱 Phone: +91 7200176530\n📍 Location: Chennai, Tamil Nadu\n\nFeel free to connect with him for opportunities!",
         'social': "Connect with Jayanth on social media:\n🔗 GitHub: github.com/Jayanth-official\n💼 LinkedIn: linkedin.com/in/jayanth-s-j-a41b66382\n\nYou can also find these links in the footer!",
         'hello': "Hello! Nice to meet you! I'm here to help you learn more about Jayanth S.J. What would you like to know?",
         'hi': "Hi there! 👋 I'm Jayanth's virtual assistant. How can I help you today?",
-        'about': "Jayanth S.J is a passionate Full Stack Developer based in Chennai. He's currently pursuing M.Sc in Information Technology and has a strong foundation in both frontend and backend development, with expertise in Python and JavaScript.",
+        'about': "Jayanth S.J is a passionate Full Stack Developer based in Chennai. He's currently pursuing M.Sc in Information Technology and has experience in software development, web development, and hardware servicing.",
         'education': "Jayanth is currently pursuing M.Sc in Information Technology at Vels Institute of Science, Technology & Advanced Studies (2026 - Present). He completed his BCA from Avichi College of Arts and Science (2020 - 2023).",
         'default': "I'm here to help you learn about Jayanth! You can ask me about his experience, skills, Python expertise, projects, contact information, social media, or education. What would you like to know?"
     };
