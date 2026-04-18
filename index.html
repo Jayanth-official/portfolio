@@ -262,5 +262,52 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-notification" id="chatNotification">1</span>
+        </div>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-info">
+                    <h4>Jayanth's Assistant</h4>
+                    <span class="status">Online</span>
+                </div>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi! I'm Jayanth's virtual assistant. How can I help you today?</p>
+                        <div class="quick-replies">
+                            <button class="quick-reply" data-message="Tell me about Jayanth's experience">Experience</button>
+                            <button class="quick-reply" data-message="What are Jayanth's skills?">Skills</button>
+                            <button class="quick-reply" data-message="Show me his projects">Projects</button>
+                            <button class="quick-reply" data-message="How can I contact Jayanth?">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="chatbotSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
